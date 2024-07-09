@@ -194,7 +194,7 @@ console.log(name.slice(0,7)); // this is to slice a string
 console.log(name.replace('Dalvi','Bhai')); // this will repace 
 console.log(name.trim('Bhai')); // this will trim the string
 
-*/
+
 
 var albumu = 'shadi';
 let album = 'shadi';
@@ -231,4 +231,52 @@ console.log(a + b,a - b,a * b, a / b, a % b, a ** b, a ++,b ++,a --,b --, ++ a,-
 
 let result = a > b ? 'yes' :'no';
 console.log(result,a,b);
+
+function divible(num) {
+    if (num % 5 === 0) {
+        console.log('Number is multiple of 5');
+    } else {
+        console.log('Number is not multipl of 5');
+    }
+}
+divible(3);
+
+// grade system for student
+
+function grade(score){
+    if (score <= 100 && score >= 90) {
+        console.log('Grade A');
+    } else if(score <= 89 && score >= 70) {
+        console.log('Grade B');
+    } else if (score <= 69 && score >= 60) {
+        console.log('Grade C');
+    } else if (score <= 59 && score >= 50) {
+        console.log('Grade D');
+    } else if (score <= 0 && score >= 49) {
+        console.log('F');
+    }
+}
+grade(98);
+*/
+
+// loops and string concepts
+
+// for loop
+
+for (i = 1; i <= 5 ; i ++ ){
+    console.log('anpan');
+}
+
+// with repeat method we can repeat a number many times we want
+
+for (i = 0; i <= 5; ++i){
+    console.log('*'.repeat(i));
+}
+
+// eg of repeat
+// regex , regular expression in js
+
+let ab = 'anpan';
+let rs = ab.repeat(5);
+console.log(rs.match(/anpan/g));
 
