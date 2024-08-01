@@ -1,0 +1,96 @@
+body {
+    font-size: 19px; /* this is ideal for veiw width*/
+    background-color: #F0F8FF;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: grid;
+}
+
+header div ul li {
+    float: right;
+}
+
+header ul{ 
+    background-color: #111;
+    padding: 0;
+    margin: 0;
+    display: block;
+    overflow: hidden;
+
+}
+
+header div ul li {
+    flex: 1;
+    padding: 16px;
+    list-style-type: none;
+    text-align: center;
+    color: white;
+}
+
+img {
+    width:4cap;
+    height:auto;
+}
+
+footer li {
+    float: right;
+}
+
+footer ul {
+    background-color: #111;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: block;
+}
+
+footer li {
+    color: white;
+    padding: 16px;
+    list-style-type: none;
+    text-align: center;
+} 
+
+footer li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+div i {
+    color: white;
+}
+
+div summary {
+    list-style: none;
+}
+
+details[open] ul {
+    display: block;
+}
+
+details ul li{
+    color: black;
+}
+
+details ul {
+    display: none;
+    position: absolute;
+} 
+
+details ul li {
+    padding: 10px 20px;
+    text-align: left;
+    display: inline-flex;
+    padding-left: 20%;
+}
+
+details ul li:hover {
+    background-color: #575757;
+}
+
+div details {
+    position: relative;
+    display: inline-block;
+}
