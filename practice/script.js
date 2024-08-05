@@ -276,7 +276,27 @@ for (i = 0; i <= 5; ++i){
 // eg of repeat
 // regex , regular expression in js
 
-let ab = 'anpan';
+let ab = 'banpan';
 let rs = ab.repeat(5);
 console.log(rs.match(/anpan/g));
+console.log(typeof(rs));
 
+let myname; 
+myname = 'Mubarak';
+console.log(myname.repeat(5));
+
+let result = Array()
+for(let i = 1; i <= 5; i++) { // for loop block of code
+    result.push("anpan"); 
+}
+
+console.log(result);
+
+// sum of number with loop
+
+let sum = 0
+for(let i = 1; i <= 11; i++) { // here we cannot use const variable cause of 
+    // the i value will not change
+    sum = sum + i;
+}
+console.log(sum);
