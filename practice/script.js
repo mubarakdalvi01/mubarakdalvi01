@@ -64,7 +64,7 @@ let condi1 = a > b; //false
 let condi2 = a === b; //true , before that i was getting false cause of declaring variable after 
 /* new varible creation as a = 14 after condi2 as a variable was declared 
 as i had a varible a with value '14' as a = '14' so in the comparision operator i was getting error due to strict comparison operator that
-is === */
+is ===
 
 
 //console.log('condition 2',condi2);
@@ -257,7 +257,7 @@ function grade(score){
     }
 }
 grade(98);
-*/
+
 
 // loops and string concepts
 
@@ -294,9 +294,113 @@ console.log(result);
 
 // sum of number with loop
 
-let sum = 0
+let sum = 0 // this variable will update with another value 
 for(let i = 1; i <= 11; i++) { // here we cannot use const variable cause of 
     // the i value will not change
     sum = sum + i;
 }
 console.log(sum);
+
+
+for (let i = 1; i <= 11; i++) {
+    console.log(i);
+}
+
+// while loop
+let i = 1
+while(i<=5){
+    console.log(i);
+    i
+}
+
+
+let arr = Array();
+let i = 0;
+while(i <= 15){
+    arr.push(i);
+    i++
+}
+
+console.log(arr);
+console.log(typeof(arr));
+
+
+
+// do while loop 
+
+let i = 1;
+
+do {
+    console.log(`This will run just ${i} times`);
+    i++;
+} while(i <= 10);
+ 
+
+
+// for of loop
+
+let str = 'mynameismubarakdalvi';
+let len = 0;
+
+for(let i of str) {
+    console.log(i);
+    len += 1;
+}
+console.log(`Our String Size is ${len}`);
+
+
+
+let student = {
+    name: "kitty",
+    age: "240",
+    blood_group: 'OOOOOO++++',
+    cgpa:"10000/100",
+    isPass:'Yes'
+};
+
+
+for(let i in student){
+    console.log(`The Student Is ${student.isPass}`);
+}
+
+// even number 
+Even = [];
+for(let i = 0; i <= 100; i++) {
+    if(i % 2 == 0){
+        Even.push(i);
+    }
+}
+console.log(Even);
+*/
+// string
+
+let str1 = 'Mubarak dalvi';
+let str2 = "Mubarak dalvi";
+
+console.log(str1,str2);
+
+console.log(str1.length);
+
+// string slice 
+
+console.log(str1[1]);
+// string mrthods
+// indexing
+console.log(str1.indexOf('a'))
+
+// templete literals/ string interpolation
+let mydetails = {
+    name: 'Mubarak Dalvi',
+    age: 24,
+    address: 'Dapoli',
+    yob: 1999
+}
+
+let medetailswithbackticks = `hi i am ${mydetails.name} ,my age is ${mydetails.age} ,\n i am from ${mydetails.address} and i am born in year ${mydetails.yob}`
+
+console.log(medetailswithbackticks);
+// done escape characters before like \n \t
+
+// trim
+
+console.log()
